@@ -1,0 +1,51 @@
+{
+  "name": "stimulus-tabulator-tables",
+  "version": "0.5.0",
+  "description": "A Stimulus controller for Tabulator Tables.",
+  "keywords": [
+    "stimulus",
+    "stimulusjs",
+    "stimulus controller",
+    "tabulator-tables",
+    "google places autocomplete"
+  ],
+  "repository": "git@github.com:stimulus-components/stimulus-tabulator-tables.git",
+  "bugs": {
+    "url": "https://github.com/stimulus-components/stimulus-tabulator-tables/issues"
+  },
+  "author": "Robiul Hassan <robiul.hassan12102@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/stimulus-components/stimulus-tabulator-tables",
+  "private": false,
+  "main": "dist/stimulus-tabulator-tables.umd.js",
+  "module": "dist/stimulus-tabulator-tables.es.js",
+  "scripts": {
+    "format": "prettier-standard  '**/*.{ts,css,html}' --format",
+    "lint": "prettier-standard  '**/*.{ts,css,html}' --lint",
+    "dev": "vite",
+    "prod": "vite build --config /dev/null",
+    "build": "tsc --noEmit && vite build",
+    "version": "yarn build",
+    "np": "np --no-2fa --no-test"
+  },
+  "devDependencies": {
+    "@babel/core": "7.18.6",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-typescript": "^7.16.7",
+    "@hotwired/stimulus": "^3.0.1",
+    "@testing-library/dom": "^8.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "mutationobserver-shim": "^0.3.7",
+    "np": "^7.6.1",
+    "prettier-standard": "16.4.1",
+    "typescript": "^4.6.4",
+    "vite": "2.9.16"
+  },
+  "peerDependencies": {
+    "@hotwired/stimulus": "^3.0.1"
+  },
+  "dependencies": {
+    "tabulator-tables": "^5.5.0"
+  }
+}

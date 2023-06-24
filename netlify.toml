@@ -1,0 +1,9 @@
+[build]
+  publish="dist"
+  command="yarn prod"
+
+[[redirects]]
+  from = "https://stimulus-tabulator-tables.netlify.app/*"
+  to = "https://stimulus-tabulator-tables.stimulus-components.com/:splat"
+  status = 301
+  force = true
